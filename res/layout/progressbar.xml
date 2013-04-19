@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:visibility="visible" android:gravity="center"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+      
+    
+	  	<ProgressBar   
+          android:id="@+id/progressBar"
+          style="?android:attr/progressBarStyleLarge"
+          android:indeterminateDrawable="@drawable/progressbar"
+          android:layout_width="50dip"   
+          android:layout_height="50dip"            
+         />  
+        <!--   mce_style="?android:attr/progressBarStyleLarge"  --> 
+      <TextView android:id="@+id/progress_tv" android:textColor="@color/wbusname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请稍候" />
+	 
+</LinearLayout> 

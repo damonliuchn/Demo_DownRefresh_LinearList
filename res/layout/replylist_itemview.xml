@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:id="@+id/ivCommentUserIcon"
+			android:layout_width="50.0dip" android:layout_height="50.0dip"
+			android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip"
+			android:src="@drawable/ic_launcher" android:adjustViewBounds="true" />
+	
+	<LinearLayout android:orientation="vertical" android:id="@+id/lyCommentRightLayout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_margin="5.0dip">
+		<TextView android:textSize="15.0sp" android:textStyle="bold"
+				android:textColor="@color/wbusname" android:id="@+id/tvCommentUserName"
+				android:paddingLeft="5.0dip" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="" />
+		<TextView android:textColor="@color/wbcontent" android:id="@+id/tvCommentWbContent"
+			android:paddingLeft="5.0dip" android:paddingRight="5.0dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="8.0dip" android:text=""
+			android:lineSpacingExtra="4.0px" />
+	</LinearLayout>
+</LinearLayout>

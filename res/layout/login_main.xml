@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+	<RelativeLayout
+            android:id="@+id/login_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/home_titlebar_bg"
+ 			>
+	</RelativeLayout>
+    <TextView
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_title" 
+        android:id="@+id/login_title"
+        android:textSize="20sp"
+        android:layout_below="@+id/login_titlebar"
+        />
+
+    <EditText
+        android:id="@+id/login_NameEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_email"
+        android:inputType="textPostalAddress" 
+        android:layout_below="@+id/login_title"
+        android:text="mentor.liu@meihua.info">
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_PasswordEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_NameEditText"
+        android:hint="@string/login_pwd"
+        android:inputType="textPostalAddress"
+        android:password="true"
+        android:text="qq8963089"
+	 >
+    </EditText>
+
+    <Button
+        android:id="@+id/login_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_PasswordEditText"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/login_login_btn" >
+    </Button>
+
+</RelativeLayout>

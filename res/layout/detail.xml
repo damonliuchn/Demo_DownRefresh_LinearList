@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/home_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/home_titlebar_bg" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_title_bg"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/detail_ivThisIcon"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/detail_tvThisName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/detail_ivThisIcon"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textColor="@color/wbusname"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/detail_tvThisMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:padding="10.0dip"
+                android:textColor="@color/wbcontent"
+                android:textSize="18.0sp" />
+
+            <com.mentor.firstdemo.view.LinearLayoutForListView
+                android:id="@+id/detail_lvCommentList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/detail_tvThisMessage"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
