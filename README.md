@@ -15,7 +15,7 @@ LinearList ：用linearlayout 改造的listview，用来解决scrollview 和list
 ------
 ##欢迎批评指正
 
-博客：http://www.dd544.com
+博客：http://blog.csdn.net/masonblog
 邮箱：MasonLiuChn@gmail.com
 
 
